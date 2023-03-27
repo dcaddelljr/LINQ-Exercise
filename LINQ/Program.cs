@@ -4,7 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var games = new List<string>()
+            {
+                "Mario Brothers",
+                "Zelda",
+                "Donkey Kong",
+                "Punch Out"
+            };
+
+            var sortedList = games.OrderBy(game => game.Length);
+
+            foreach (var item in sortedList)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
